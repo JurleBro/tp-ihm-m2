@@ -1,0 +1,17 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {}
+
+application {
+    mainClass = 'main.java.com.ubo.tp.twitub.TwitubLauncher'
+}
+
+tasks.jar {
+    manifest.attributes["Main-Class"] = 'main.java.com.ubo.tp.twitub.TwitubLauncher'
+}

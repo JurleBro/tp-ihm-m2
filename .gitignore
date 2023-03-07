@@ -2,3 +2,11 @@
 out
 IHM-UBO-TP.iml
 src/main/resources/db
+ant_build
+target
+
+.gradle
+gradle
+gradlew
+gradlew.bat
+build
