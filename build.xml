@@ -4,12 +4,12 @@
         <delete dir="ant_build"/>
     </target>
 
-    <target name="compile">
+    <target name="compile" depends="clean">
         <mkdir dir="ant_build/classes"/>
         <javac srcdir="src" destdir="ant_build/classes"/>
     </target>
 
-    <target name="jar">
+    <target name="jar" depends="compile">
         <mkdir dir="ant_build/jar"/>
         <jar destfile="ant_build/jar/twitter.jar" basedir="ant_build/classes">
             <manifest>
