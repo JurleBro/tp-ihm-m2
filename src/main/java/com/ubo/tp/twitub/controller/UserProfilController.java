@@ -1,12 +1,12 @@
-package main.java.com.ubo.tp.twitub.controller;
+package com.ubo.tp.twitub.controller;
 
 import java.util.UUID;
 
-import main.java.com.ubo.tp.twitub.core.EntityManager;
-import main.java.com.ubo.tp.twitub.datamodel.IDatabaseObserver;
-import main.java.com.ubo.tp.twitub.datamodel.Twit;
-import main.java.com.ubo.tp.twitub.datamodel.User;
-import main.java.com.ubo.tp.twitub.view.UserProfilPanel;
+import com.ubo.tp.twitub.core.EntityManager;
+import com.ubo.tp.twitub.datamodel.IDatabaseObserver;
+import com.ubo.tp.twitub.datamodel.Twit;
+import com.ubo.tp.twitub.datamodel.User;
+import com.ubo.tp.twitub.view.UserProfilPanel;
 
 public class UserProfilController implements Controller, IDatabaseObserver {
   private final EntityManager entityManager;

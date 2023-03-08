@@ -1,12 +1,12 @@
-package main.java.com.ubo.tp.twitub.view;
+package com.ubo.tp.twitub.view;
 
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import java.util.List;
 import java.util.Map;
 
-import main.java.com.ubo.tp.twitub.controller.InscriptionController;
-import main.java.com.ubo.tp.twitub.view.form.FormPanel;
+import com.ubo.tp.twitub.controller.InscriptionController;
+import com.ubo.tp.twitub.view.form.FormPanel;
 
 public class InscriptionForm extends FormPanel {
 

@@ -1,14 +1,14 @@
-package main.java.com.ubo.tp.twitub.core;
+package com.ubo.tp.twitub.core;
 
 import javax.swing.JFileChooser;
 import java.io.File;
 
-import main.java.com.ubo.tp.twitub.controller.MainController;
-import main.java.com.ubo.tp.twitub.datamodel.Database;
-import main.java.com.ubo.tp.twitub.datamodel.IDatabase;
-import main.java.com.ubo.tp.twitub.events.file.IWatchableDirectory;
-import main.java.com.ubo.tp.twitub.events.file.WatchableDirectory;
-import main.java.com.ubo.tp.twitub.view.TwitubMock;
+import com.ubo.tp.twitub.controller.MainController;
+import com.ubo.tp.twitub.datamodel.Database;
+import com.ubo.tp.twitub.datamodel.IDatabase;
+import com.ubo.tp.twitub.events.file.IWatchableDirectory;
+import com.ubo.tp.twitub.events.file.WatchableDirectory;
+import com.ubo.tp.twitub.view.TwitubMock;
 
 /**
  * Classe principale l'application.

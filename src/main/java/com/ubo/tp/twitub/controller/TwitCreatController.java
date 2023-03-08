@@ -1,10 +1,10 @@
-package main.java.com.ubo.tp.twitub.controller;
+package com.ubo.tp.twitub.controller;
 
 import java.util.Collections;
 import java.util.List;
 
-import main.java.com.ubo.tp.twitub.core.EntityManager;
-import main.java.com.ubo.tp.twitub.datamodel.Twit;
+import com.ubo.tp.twitub.core.EntityManager;
+import com.ubo.tp.twitub.datamodel.Twit;
 
 public class TwitCreatController implements Controller {
 

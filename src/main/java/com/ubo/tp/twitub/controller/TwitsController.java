@@ -1,4 +1,4 @@
-package main.java.com.ubo.tp.twitub.controller;
+package com.ubo.tp.twitub.controller;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,11 +8,11 @@ import java.util.Set;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
-import main.java.com.ubo.tp.twitub.core.EntityManager;
-import main.java.com.ubo.tp.twitub.datamodel.IDatabaseObserver;
-import main.java.com.ubo.tp.twitub.datamodel.Twit;
-import main.java.com.ubo.tp.twitub.datamodel.User;
-import main.java.com.ubo.tp.twitub.view.TwitsPanel;
+import com.ubo.tp.twitub.core.EntityManager;
+import com.ubo.tp.twitub.datamodel.IDatabaseObserver;
+import com.ubo.tp.twitub.datamodel.Twit;
+import com.ubo.tp.twitub.datamodel.User;
+import com.ubo.tp.twitub.view.TwitsPanel;
 
 public class TwitsController implements Controller, IDatabaseObserver {
   private final EntityManager entityManager;

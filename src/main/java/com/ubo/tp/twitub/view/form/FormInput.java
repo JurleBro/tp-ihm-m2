@@ -1,4 +1,4 @@
-package main.java.com.ubo.tp.twitub.view.form;
+package com.ubo.tp.twitub.view.form;
 
 import javax.swing.JTextField;
 import java.util.List;

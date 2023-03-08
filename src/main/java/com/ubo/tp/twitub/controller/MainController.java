@@ -1,20 +1,20 @@
-package main.java.com.ubo.tp.twitub.controller;
+package com.ubo.tp.twitub.controller;
 
 import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
 
-import main.java.com.ubo.tp.twitub.component.ConnexionComponent;
-import main.java.com.ubo.tp.twitub.component.InscriptionComponent;
-import main.java.com.ubo.tp.twitub.component.TwitCreatComponent;
-import main.java.com.ubo.tp.twitub.component.TwitsComponent;
-import main.java.com.ubo.tp.twitub.component.UserProfilComponent;
-import main.java.com.ubo.tp.twitub.component.UsersComponent;
-import main.java.com.ubo.tp.twitub.core.EntityManager;
-import main.java.com.ubo.tp.twitub.datamodel.User;
-import main.java.com.ubo.tp.twitub.events.file.ConnexionObserver;
-import main.java.com.ubo.tp.twitub.view.APropoView;
-import main.java.com.ubo.tp.twitub.view.TwitubMainView;
+import com.ubo.tp.twitub.component.ConnexionComponent;
+import com.ubo.tp.twitub.component.InscriptionComponent;
+import com.ubo.tp.twitub.component.TwitCreatComponent;
+import com.ubo.tp.twitub.component.TwitsComponent;
+import com.ubo.tp.twitub.component.UserProfilComponent;
+import com.ubo.tp.twitub.component.UsersComponent;
+import com.ubo.tp.twitub.core.EntityManager;
+import com.ubo.tp.twitub.datamodel.User;
+import com.ubo.tp.twitub.events.file.ConnexionObserver;
+import com.ubo.tp.twitub.view.APropoView;
+import com.ubo.tp.twitub.view.TwitubMainView;
 
 public class MainController implements ConnexionObserver {
   TwitubMainView mainFrame;

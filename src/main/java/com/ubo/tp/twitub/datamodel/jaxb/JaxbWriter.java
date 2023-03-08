@@ -1,4 +1,4 @@
-package main.java.com.ubo.tp.twitub.datamodel.jaxb;
+package com.ubo.tp.twitub.datamodel.jaxb;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -6,9 +6,9 @@ import java.io.FileWriter;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
 
-import main.java.com.ubo.tp.twitub.common.FilesUtils;
-import main.java.com.ubo.tp.twitub.datamodel.jaxb.bean.twit.TwitXml;
-import main.java.com.ubo.tp.twitub.datamodel.jaxb.bean.user.UserXml;
+import com.ubo.tp.twitub.common.FilesUtils;
+import com.ubo.tp.twitub.datamodel.jaxb.bean.twit.TwitXml;
+import com.ubo.tp.twitub.datamodel.jaxb.bean.user.UserXml;
 
 /**
  * Classe de génération des fichiers XML.

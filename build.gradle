@@ -9,9 +9,9 @@ repositories {
 dependencies {}
 
 application {
-    mainClass = 'main.java.com.ubo.tp.twitub.TwitubLauncher'
+    mainClass = 'com.ubo.tp.twitub.TwitubLauncher'
 }
 
 tasks.jar {
-    manifest.attributes["Main-Class"] = 'main.java.com.ubo.tp.twitub.TwitubLauncher'
+    manifest.attributes["Main-Class"] = 'com.ubo.tp.twitub.TwitubLauncher'
 }

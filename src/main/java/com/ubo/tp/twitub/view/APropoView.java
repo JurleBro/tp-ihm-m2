@@ -1,4 +1,4 @@
-package main.java.com.ubo.tp.twitub.view;
+package com.ubo.tp.twitub.view;
 
 import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;

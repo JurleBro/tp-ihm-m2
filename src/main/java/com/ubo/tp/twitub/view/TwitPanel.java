@@ -1,4 +1,4 @@
-package main.java.com.ubo.tp.twitub.view;
+package com.ubo.tp.twitub.view;
 
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -12,8 +12,8 @@ import java.awt.Insets;
 import java.text.DateFormat;
 import java.util.Date;
 
-import main.java.com.ubo.tp.twitub.controller.MainController;
-import main.java.com.ubo.tp.twitub.datamodel.Twit;
+import com.ubo.tp.twitub.controller.MainController;
+import com.ubo.tp.twitub.datamodel.Twit;
 
 public class TwitPanel extends JPanel {
 

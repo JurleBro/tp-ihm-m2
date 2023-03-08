@@ -1,4 +1,4 @@
-package main.java.com.ubo.tp.twitub.view;
+package com.ubo.tp.twitub.view;
 
 import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
@@ -14,7 +14,7 @@ import java.awt.GridBagLayout;
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
 
-import main.java.com.ubo.tp.twitub.controller.MainController;
+import com.ubo.tp.twitub.controller.MainController;
 
 /**
  * Classe de la vue principale de l'application.

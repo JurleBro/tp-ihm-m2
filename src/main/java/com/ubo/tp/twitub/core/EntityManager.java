@@ -1,4 +1,4 @@
-package main.java.com.ubo.tp.twitub.core;
+package com.ubo.tp.twitub.core;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -9,17 +9,17 @@ import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
 
-import main.java.com.ubo.tp.twitub.common.Constants;
-import main.java.com.ubo.tp.twitub.datamodel.IDatabase;
-import main.java.com.ubo.tp.twitub.datamodel.IDatabaseObserver;
-import main.java.com.ubo.tp.twitub.datamodel.Twit;
-import main.java.com.ubo.tp.twitub.datamodel.User;
-import main.java.com.ubo.tp.twitub.datamodel.converter.XmlbeanDatamodelConverter;
-import main.java.com.ubo.tp.twitub.datamodel.jaxb.JaxbReader;
-import main.java.com.ubo.tp.twitub.datamodel.jaxb.JaxbWriter;
-import main.java.com.ubo.tp.twitub.datamodel.jaxb.bean.twit.TwitXml;
-import main.java.com.ubo.tp.twitub.datamodel.jaxb.bean.user.UserXml;
-import main.java.com.ubo.tp.twitub.events.file.IWatchableDirectoryObserver;
+import com.ubo.tp.twitub.common.Constants;
+import com.ubo.tp.twitub.datamodel.IDatabase;
+import com.ubo.tp.twitub.datamodel.IDatabaseObserver;
+import com.ubo.tp.twitub.datamodel.Twit;
+import com.ubo.tp.twitub.datamodel.User;
+import com.ubo.tp.twitub.datamodel.converter.XmlbeanDatamodelConverter;
+import com.ubo.tp.twitub.datamodel.jaxb.JaxbReader;
+import com.ubo.tp.twitub.datamodel.jaxb.JaxbWriter;
+import com.ubo.tp.twitub.datamodel.jaxb.bean.twit.TwitXml;
+import com.ubo.tp.twitub.datamodel.jaxb.bean.user.UserXml;
+import com.ubo.tp.twitub.events.file.IWatchableDirectoryObserver;
 
 /**
  * Classe de gestion de la mise à jour de la base de données et de génération

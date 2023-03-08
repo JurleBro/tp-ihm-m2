@@ -1,14 +1,14 @@
-package main.java.com.ubo.tp.twitub.component;
+package com.ubo.tp.twitub.component;
 
 import javax.swing.JPanel;
 
 import java.util.UUID;
 
-import main.java.com.ubo.tp.twitub.controller.Controller;
-import main.java.com.ubo.tp.twitub.controller.MainController;
-import main.java.com.ubo.tp.twitub.controller.TwitsController;
-import main.java.com.ubo.tp.twitub.core.EntityManager;
-import main.java.com.ubo.tp.twitub.view.TwitsPanel;
+import com.ubo.tp.twitub.controller.Controller;
+import com.ubo.tp.twitub.controller.MainController;
+import com.ubo.tp.twitub.controller.TwitsController;
+import com.ubo.tp.twitub.core.EntityManager;
+import com.ubo.tp.twitub.view.TwitsPanel;
 
 public class TwitsComponent implements Component {
   TwitsPanel twitsPanel;

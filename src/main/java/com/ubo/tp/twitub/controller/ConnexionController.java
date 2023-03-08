@@ -1,12 +1,12 @@
-package main.java.com.ubo.tp.twitub.controller;
+package com.ubo.tp.twitub.controller;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import main.java.com.ubo.tp.twitub.core.EntityManager;
-import main.java.com.ubo.tp.twitub.datamodel.User;
-import main.java.com.ubo.tp.twitub.events.file.ConnexionObserver;
+import com.ubo.tp.twitub.core.EntityManager;
+import com.ubo.tp.twitub.datamodel.User;
+import com.ubo.tp.twitub.events.file.ConnexionObserver;
 
 public class ConnexionController implements Controller {
 

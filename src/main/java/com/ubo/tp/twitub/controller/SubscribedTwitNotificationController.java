@@ -1,9 +1,9 @@
-package main.java.com.ubo.tp.twitub.controller;
+package com.ubo.tp.twitub.controller;
 
-import main.java.com.ubo.tp.twitub.datamodel.IDatabaseObserver;
-import main.java.com.ubo.tp.twitub.datamodel.Twit;
-import main.java.com.ubo.tp.twitub.datamodel.User;
-import main.java.com.ubo.tp.twitub.view.SubcribedTwitNotification;
+import com.ubo.tp.twitub.datamodel.IDatabaseObserver;
+import com.ubo.tp.twitub.datamodel.Twit;
+import com.ubo.tp.twitub.datamodel.User;
+import com.ubo.tp.twitub.view.SubcribedTwitNotification;
 
 public class SubscribedTwitNotificationController implements IDatabaseObserver {
   private final MainController mainController;

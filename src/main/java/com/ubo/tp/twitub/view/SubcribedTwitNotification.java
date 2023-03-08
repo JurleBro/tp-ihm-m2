@@ -1,4 +1,4 @@
-package main.java.com.ubo.tp.twitub.view;
+package com.ubo.tp.twitub.view;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -7,7 +7,7 @@ import javax.swing.Timer;
 import java.awt.Dimension;
 import java.awt.GridBagLayout;
 
-import main.java.com.ubo.tp.twitub.datamodel.User;
+import com.ubo.tp.twitub.datamodel.User;
 
 public class SubcribedTwitNotification extends JFrame {
 

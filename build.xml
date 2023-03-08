@@ -13,7 +13,7 @@
         <mkdir dir="ant_build/jar"/>
         <jar destfile="ant_build/jar/twitter.jar" basedir="ant_build/classes">
             <manifest>
-                <attribute name="Main-Class" value="main.java.com.ubo.tp.twitub.TwitubLauncher"/>
+                <attribute name="Main-Class" value="com.ubo.tp.twitub.TwitubLauncher"/>
             </manifest>
         </jar>
     </target>

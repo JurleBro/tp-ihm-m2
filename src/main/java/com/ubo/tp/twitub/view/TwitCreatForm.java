@@ -1,11 +1,11 @@
-package main.java.com.ubo.tp.twitub.view;
+package com.ubo.tp.twitub.view;
 
 import javax.swing.JTextField;
 import java.util.List;
 import java.util.Map;
 
-import main.java.com.ubo.tp.twitub.controller.TwitCreatController;
-import main.java.com.ubo.tp.twitub.view.form.FormPanel;
+import com.ubo.tp.twitub.controller.TwitCreatController;
+import com.ubo.tp.twitub.view.form.FormPanel;
 
 public class TwitCreatForm extends FormPanel {
 

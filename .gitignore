@@ -12,3 +12,9 @@ gradlew.bat
 build
 
 cicd/jenkins/jenkins_configuration/**
+cicd/sonarqube/postgresql/**
+cicd/sonarqube/postgresql_data/**
+cicd/sonarqube/sonarqube_data/**
+cicd/sonarqube/sonarqube_extensions/**
+cicd/sonarqube/sonarqube_logs/**
+

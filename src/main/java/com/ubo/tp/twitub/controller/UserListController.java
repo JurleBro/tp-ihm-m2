@@ -1,4 +1,4 @@
-package main.java.com.ubo.tp.twitub.controller;
+package com.ubo.tp.twitub.controller;
 
 import java.util.HashSet;
 import java.util.List;
@@ -6,12 +6,12 @@ import java.util.Set;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
-import main.java.com.ubo.tp.twitub.core.EntityManager;
-import main.java.com.ubo.tp.twitub.datamodel.IDatabaseObserver;
-import main.java.com.ubo.tp.twitub.datamodel.Twit;
-import main.java.com.ubo.tp.twitub.datamodel.User;
-import main.java.com.ubo.tp.twitub.events.file.ConnexionObserver;
-import main.java.com.ubo.tp.twitub.view.UsersPanel;
+import com.ubo.tp.twitub.core.EntityManager;
+import com.ubo.tp.twitub.datamodel.IDatabaseObserver;
+import com.ubo.tp.twitub.datamodel.Twit;
+import com.ubo.tp.twitub.datamodel.User;
+import com.ubo.tp.twitub.events.file.ConnexionObserver;
+import com.ubo.tp.twitub.view.UsersPanel;
 
 public class UserListController implements Controller, IDatabaseObserver, ConnexionObserver, DeconnexionObserver {
   private final EntityManager entityManager;

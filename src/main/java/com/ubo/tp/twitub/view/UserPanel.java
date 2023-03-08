@@ -1,4 +1,4 @@
-package main.java.com.ubo.tp.twitub.view;
+package com.ubo.tp.twitub.view;
 
 import javax.swing.AbstractAction;
 import javax.swing.JButton;
@@ -13,9 +13,9 @@ import java.awt.Insets;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 
-import main.java.com.ubo.tp.twitub.controller.MainController;
-import main.java.com.ubo.tp.twitub.controller.UserListController;
-import main.java.com.ubo.tp.twitub.datamodel.User;
+import com.ubo.tp.twitub.controller.MainController;
+import com.ubo.tp.twitub.controller.UserListController;
+import com.ubo.tp.twitub.datamodel.User;
 
 public class UserPanel extends JPanel {
 
