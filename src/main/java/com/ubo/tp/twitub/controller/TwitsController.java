@@ -18,15 +18,13 @@ public class TwitsController implements Controller, IDatabaseObserver {
   private final EntityManager entityManager;
   private TwitsPanel twitsPanel;
   private Set<Twit> allTwits;
-  private List<String> userTagsFilter;
-  private List<String> tagsFilter;
+  private String userTagsFilter;
+  private String tagsFilter;
   private UUID idUserFilter;
 
   public TwitsController(EntityManager entityManager) {
     this.entityManager = entityManager;
     this.allTwits = new HashSet<>();
-    this.userTagsFilter = new ArrayList<>();
-    this.tagsFilter = new ArrayList<>();
   }
 
   public void subcribeToDb() {
@@ -50,27 +48,20 @@ public class TwitsController implements Controller, IDatabaseObserver {
   }
 
   private List<UUID> getUuidsFiltered() {
-    List<UUID> twits = allTwits
+    return allTwits
       .stream()
-      .filter(twit -> (idUserFilter == null || twit.getTwiter().getUuid().equals(idUserFilter))
-        && (containsAll(twit.getTags(), tagsFilter))
-        && (userTagsFilter.size() == 1 && twit.getTwiter().getUserTag().toLowerCase().contains(userTagsFilter.get(0).toLowerCase())
-            || containsAll(twit.getUserTags(), userTagsFilter)
+      .filter(twit -> (idUserFilter == null
+          || twit.getTwiter().getUuid().equals(idUserFilter))
+        && (tagsFilter == null
+          || twit.getTags().stream().map(String::toLowerCase).anyMatch(tag -> tag.equals(tagsFilter.toLowerCase())))
+        && (userTagsFilter == null
+          || twit.getUserTags().stream().map(String::toLowerCase).anyMatch(tag -> tag.equals(userTagsFilter.toLowerCase()))
+          || twit.getTwiter().getUserTag().equalsIgnoreCase(userTagsFilter)
         )
       )
       .sorted((e1, e2) -> e2.getEmissionDate() < e1.getEmissionDate() ? -1 : 1)
       .map(Twit::getUuid)
       .collect(Collectors.toList());
-    return twits;
-  }
-
-  public boolean containsAll(Set<String> list1, List<String> list2) {
-    return list2.isEmpty() || list2
-      .stream()
-      .allMatch(tag -> list1
-        .stream()
-        .anyMatch(twitTag -> twitTag.toLowerCase().contains(tag.toLowerCase()))
-      );
   }
 
   @Override
@@ -104,15 +95,22 @@ public class TwitsController implements Controller, IDatabaseObserver {
   }
 
   public void setFilter(String text) {
-    List<String> mots = Arrays.asList(text.split(" "));
-    userTagsFilter = mots.stream()
-      .filter(mot -> mot.startsWith("@"))
-      .map(mot -> mot.substring(1))
-      .collect(Collectors.toList());
-    tagsFilter = mots.stream()
-      .filter(mot -> mot.startsWith("#"))
-      .map(mot -> mot.substring(1))
-      .collect(Collectors.toList());
+    if (text != null && !text.isEmpty()) {
+      String substring = text.substring(1);
+      if(text.startsWith("@")) {
+        userTagsFilter = substring;
+        tagsFilter = null;
+      } else if (text.startsWith("#")) {
+        tagsFilter = substring;
+        userTagsFilter = null;
+      } else {
+        tagsFilter = substring;
+        userTagsFilter = substring;
+      }
+    } else {
+      tagsFilter = null;
+      userTagsFilter = null;
+    }
     twitsPanel.refreshList(getUuidsFiltered());
   }
 }
